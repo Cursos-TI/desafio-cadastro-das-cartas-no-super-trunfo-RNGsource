@@ -122,6 +122,15 @@ int main() {
      // --- CÁLCULO DO SUPER PODER ---
     superPoder_1 = (float)populacao_1 + area_1 + (pib_1 * 1000000000) + (float)pontosTuristicos_1 + pibPerCapita_1 + (1 / densidade_1);
     superPoder_2 = (float)populacao_2 + area_2 + (pib_2 * 1000000000) + (float)pontosTuristicos_2 + pibPerCapita_2 + (1 / densidade_2);
+    
+    // --- COMPARAÇÃO DAS CARTAS (Nível Mestre)
+    vitoria_populacao = populacao_1 > populacao_2;
+    vitoria_area = area_1 > area_2;
+    vitoria_pib = pib_1 > pib_2;
+    vitoria_pontos = pontosTuristicos_1 > pontosTuristicos_2;
+    vitoria_densidade = densidade_1 < densidade_2;
+    vitoria_pibPerCapita = pibPerCapita_1 > pibPerCapita_2;
+    vitoria_superPoder = superPoder_1 > superPoder_2;
 
 
     // --- Exibição dos Dados Cadastrados ---
